@@ -6,4 +6,5 @@
 * Exceptions (try, catch, throw, throws) and threads.
 * Data structures (BitSet, ArrayList, Stack, HashMap, generic objects, enum).
 * Swing library.
+
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
