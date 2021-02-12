@@ -5,6 +5,11 @@
 * Packages, interfaces, access modifiers.
 * Exceptions (try, catch, throw, throws) and threads.
 * Data structures (BitSet, ArrayList, Stack, HashMap, generic objects, enum).
-* Swing library (basic interface components, layouts - FlowLayout, BoxLayout, GridLayout, BorderLayout, CardLayout, events handling, Graphics2D class, Java Web Start - JNLP files, SwingWorker class.
+* Swing library:
+- basic components of interface, 
+- layouts - FlowLayout, BoxLayout, GridLayout, BorderLayout, CardLayout, 
+- events handling, 
+- Graphics2D class, 
+- Java Web Start (JNLP files, SwingWorker class).
 
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
