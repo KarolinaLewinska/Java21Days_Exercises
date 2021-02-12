@@ -6,7 +6,7 @@ Exercises made to learn Java from "Java in 21 Days" book.
 * Exceptions (try, catch, throw, throws) and threads.
 * Data structures (BitSet, ArrayList, Stack, HashMap, generic objects, enum).
 * Swing library: <br/>
--basic components of interface,<br/>
+- basic components of interface,<br/>
 -layouts - FlowLayout, BoxLayout, GridLayout, BorderLayout, CardLayout,<br/> 
 -events handling,<br/> 
 -Graphics2D class,<br/> 
