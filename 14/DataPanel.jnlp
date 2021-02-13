@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<jnlp href="DataPanel.jnlp">
+    <information>
+        <title>Dane osobowe</title>
+        <vendor>Karolina Lewińska</vendor>
+        <offline-allowed/>
+    </information>
+    <resources>
+        <j2se version="1.8"/>
+        <jar href="DataPanel.jar"/>
+    </resources>
+    <security>
+        <all-permissions />
+    </security>
+    <application-desc main-class="DataPanel"/>
+</jnlp>
