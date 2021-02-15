@@ -12,6 +12,6 @@ Exercises made to learn Java from "Java in 21 Days" book.
 -Graphics2D class,<br/> 
 -Java Web Start (JNLP files, SwingWorker class).<br/>
 * Input/Output streams.
-* Nested classes, lambda expressions, closures
+* Nested classes, lambda expressions, closures.
 
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
