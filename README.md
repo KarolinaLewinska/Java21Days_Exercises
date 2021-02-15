@@ -11,5 +11,6 @@ Exercises made to learn Java from "Java in 21 Days" book.
 -events handling,<br/> 
 -Graphics2D class,<br/> 
 -Java Web Start (JNLP files, SwingWorker class).<br/>
+* Input/Output streams.
 
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
