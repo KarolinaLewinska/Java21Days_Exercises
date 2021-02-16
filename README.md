@@ -14,5 +14,6 @@ Exercises made to learn Java from "Java in 21 Days" book.
 * Input/Output streams.
 * Nested classes, lambda expressions, closures.
 * Communication via Internet (sockets, buffers, channels).
+* JDBC library.
 
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
