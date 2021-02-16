@@ -13,5 +13,6 @@ Exercises made to learn Java from "Java in 21 Days" book.
 -Java Web Start (JNLP files, SwingWorker class).<br/>
 * Input/Output streams.
 * Nested classes, lambda expressions, closures.
+* Communication via Internet (sockets, buffers, channels).
 
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
