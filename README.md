@@ -16,6 +16,6 @@ Exercises made to learn Java from "Java in 21 Days" book.
 * Communication via Internet (sockets, buffers, channels).
 * JDBC library.
 * XML operations using XOM library.
-* communication via XML-RPC.
+* Communication via XML-RPC.
 
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
