@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <title>
+            Gra o tron
+        </title>
+        <author>
+            George R.R. Martin
+        </author>
+        <dateOfPublishing>
+            2016-11-28
+        </dateOfPublishing>
+        <publisher>
+            Zysk i S-ka
+        </publisher>
+        <genre>
+            fantasy, science fiction
+        </genre>
+        <pagesNumber>
+            999
+        </pagesNumber>
+    </book>
+
+    <book>
+        <title>
+            Uczta dla wron: Cienie śmierci
+        </title>
+        <author>
+            George R.R. Martin
+        </author>
+        <dateOfPublishing>
+            2015-04-13
+        </dateOfPublishing>
+        <publisher>
+            Zysk i S-ka
+        </publisher>
+        <genre>
+            fantasy, science fiction
+        </genre>
+        <pagesNumber>
+            480
+        </pagesNumber>
+    </book>
+
+    <book>
+        <title>
+            Harry Potter i Kamień Filozoficzny
+        </title>
+        <author>
+            J.K. Rowling
+        </author>
+        <dateOfPublishing>
+            2016-07-20
+        </dateOfPublishing>
+        <publisher>
+            Media Rodzina
+        </publisher>
+        <genre>
+            literatura młodzieżowa
+        </genre>
+        <pagesNumber>
+            320
+        </pagesNumber>
+    </book>
+</books>
