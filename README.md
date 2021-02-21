@@ -15,6 +15,7 @@ Exercises made to learn Java from "Java in 21 Days" book.
 * Nested classes, lambda expressions, closures.
 * Communication via Internet (sockets, buffers, channels).
 * JDBC library.
-* XML operations using XOM library
+* XML operations using XOM library.
+* communication via XML-RPC.
 
 ![java21](https://github.com/KarolinaLewinska/Java21Days_Exercises/blob/main/java21.jpg)
