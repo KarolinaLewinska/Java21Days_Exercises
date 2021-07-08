@@ -3,7 +3,6 @@ package java21.com;
 import javax.swing.*;
 import java.awt.image.ImagingOpException;
 
-
 public class MP3Player extends JFrame {
     JButton previous, play, pause, next;
 
