@@ -8,49 +8,49 @@ public class Main {
     }
 }
 
-class Number{
-    public static void numberConverter(String liczbaSłownie) {
+class Number {
+    public static void numberConverter(String numberInWords) {
 
-        switch(liczbaSłownie) {
+        switch(numberInWords) {
             case "jeden":
-                long jeden = 1;
-                System.out.println(jeden);
+                long one = 1;
+                System.out.println(one);
                 break;
             case "dwa":
-                long dwa = 2;
-                System.out.println(dwa);
+                long two = 2;
+                System.out.println(two);
                 break;
             case "trzy":
-                long trzy = 3;
-                System.out.println(trzy);
+                long three = 3;
+                System.out.println(three);
                 break;
             case "cztery":
-                long cztery = 4;
-                System.out.println(cztery);
+                long four = 4;
+                System.out.println(four);
                 break;
             case "pięć":
-                long pięć = 5;
-                System.out.println(pięć);
+                long five = 5;
+                System.out.println(five);
                 break;
             case "sześć":
-                long sześć = 6;
-                System.out.println(sześć);
+                long six = 6;
+                System.out.println(six);
                 break;
             case "siedem":
-                long siedem = 7;
-                System.out.println(siedem);
+                long seven = 7;
+                System.out.println(seven);
                 break;
             case "osiem":
-                long osiem = 8;
-                System.out.println(osiem);
+                long eight = 8;
+                System.out.println(eight);
                 break;
             case "dziewięć":
-                long dziewięć = 9;
-                System.out.println(dziewięć);
+                long nine = 9;
+                System.out.println(nine);
                 break;
             default:
-                long dziesięć = 10;
-                System.out.println(dziesięć);
+                long ten = 10;
+                System.out.println(ten);
         }
     }
 }
