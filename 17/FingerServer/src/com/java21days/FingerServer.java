@@ -7,16 +7,11 @@ import java.util.*;
 
 public class FingerServer {
     public FingerServer() {
-        try (ServerSocketChannel sock = ServerSocketChannel.open();
-             ServerSocket socket = sock.socket();) {
-
+        try (ServerSocketChannel sock = ServerSocketChannel.open(); ServerSocket socket = sock.socket();) {
             sock.configureBlocking(false);
-
-            InetSocketAddress server = new InetSocketAddress(
-                    "localhost", 79);
-
+            InetSocketAddress server = new InetSocketAddress("localhost", 79);
             socket.bind(server);
-
+            
             Selector selector = Selector.open();
             sock.register(selector, SelectionKey.OP_ACCEPT);
 
@@ -31,8 +26,7 @@ public class FingerServer {
 
                     it.remove();
                     if (sKey.isAcceptable()) {
-                        ServerSocketChannel selChannel =
-                                (ServerSocketChannel) sKey.channel();
+                        ServerSocketChannel selChannel = (ServerSocketChannel) sKey.channel();
                         ServerSocket sSock = selChannel.socket();
                         try (Socket connection = sSock.accept()) {
                             handleRequest(connection);
@@ -48,8 +42,7 @@ public class FingerServer {
     private void handleRequest(Socket connection) throws IOException {
         InputStreamReader isr = new InputStreamReader(connection.getInputStream());
         BufferedReader is = new BufferedReader(isr);
-        PrintWriter pw = new PrintWriter(new BufferedOutputStream
-                (connection.getOutputStream()), false);
+        PrintWriter pw = new PrintWriter(new BufferedOutputStream(connection.getOutputStream()), false);
 
         pw.println("Serwer Finger");
         pw.flush();
@@ -57,9 +50,9 @@ public class FingerServer {
         String outLine = null;
         String inLine = is.readLine();
 
-        if (inLine.length() > 0) {
+        if (inLine.length() > 0) 
             outLine = inLine;
-        }
+        
         readPlan(outLine, pw);
 
         pw.flush();
@@ -69,7 +62,7 @@ public class FingerServer {
 
     private void readPlan(String userName, PrintWriter pw) {
         try (FileReader file = new FileReader(userName + ".plan");
-             BufferedReader buff = new BufferedReader(file);) {
+            BufferedReader buff = new BufferedReader(file);) {
             boolean eof = false;
 
             pw.println("\nNazwa użytkownika: " + userName + "\n");
@@ -77,14 +70,14 @@ public class FingerServer {
             while (!eof) {
                 String line = buff.readLine();
 
-                if (line == null) {
+                if (line == null) 
                     eof = true;
-                } else {
+                else 
                     pw.println(line);
-                }
             }
 
             buff.close();
+            
         } catch (IOException e) {
             pw.println("Nie znaleziono użytkownika " + userName + ".");
         }
