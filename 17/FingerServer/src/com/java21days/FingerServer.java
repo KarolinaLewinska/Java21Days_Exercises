@@ -7,7 +7,9 @@ import java.util.*;
 
 public class FingerServer {
     public FingerServer() {
-        try (ServerSocketChannel sock = ServerSocketChannel.open(); ServerSocket socket = sock.socket();) {
+        try (ServerSocketChannel sock = ServerSocketChannel.open(); 
+                ServerSocket socket = sock.socket();) {
+            
             sock.configureBlocking(false);
             InetSocketAddress server = new InetSocketAddress("localhost", 79);
             socket.bind(server);
