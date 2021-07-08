@@ -16,11 +16,9 @@ public class FavouritesWebsitesSaver {
         try {
             FileWriter fw = new FileWriter(file);
             BufferedWriter out = new BufferedWriter(fw);
-            HttpURLConnection connection = (HttpURLConnection)
-                    websiteAddress.openConnection();
+            HttpURLConnection connection = (HttpURLConnection) websiteAddress.openConnection();
             connection.connect();
-            InputStreamReader isr = new InputStreamReader(
-                    (InputStream) connection.getContent());
+            InputStreamReader isr = new InputStreamReader((InputStream) connection.getContent());
             BufferedReader br = new BufferedReader(isr);
             String lineOfFile;
             do {
