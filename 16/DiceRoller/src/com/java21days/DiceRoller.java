@@ -91,7 +91,7 @@ public class DiceRoller extends JFrame {
         try {
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception exc) {
-
+            System.err.println("Wystąpił błąd " + exc);
         }
     }
 
