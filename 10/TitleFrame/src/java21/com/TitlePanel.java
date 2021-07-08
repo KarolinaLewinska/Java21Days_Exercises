@@ -17,7 +17,7 @@ public class TitlePanel extends JFrame {
             UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
             SwingUtilities.updateComponentTreeUI(this);
         } catch(Exception exc) {
-            
+            System.err.println("Wystąpił błąd " + exc);
         }
     }
 
