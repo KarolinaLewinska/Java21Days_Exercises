@@ -8,13 +8,10 @@ public class YahooDbReader {
     }
     public void readStocks() {
         String db = "jdbc:derby://localhost:1527/sample";
-        try (
-           Connection conn = DriverManager.getConnection(
-               db, "app", "APP");
+        try (Connection conn = DriverManager.getConnection(db, "app", "APP");
            Statement st = conn.createStatement()) {
-
-           Class.forName("org.apache.derby.jdbc.ClientDriver");
-
+           
+            Class.forName("org.apache.derby.jdbc.ClientDriver");
             ResultSet query;
             query = st.executeQuery(
                     "select TICKER, PRICE, DATE, CHANGE, LOW, HIGH, PRICEOPEN, VOLUME " +
@@ -31,7 +28,9 @@ public class YahooDbReader {
                 System.out.println("VOLUME:\t" + query.getString(8));
                 System.out.println();
             }
+            
             st.close();
+            
         } catch (SQLException s) {
             s.getMessage();
         } catch (Exception e) {
