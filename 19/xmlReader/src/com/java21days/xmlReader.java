@@ -8,11 +8,10 @@ public class xmlReader {
         Builder builder1 = new Builder();
         File xml = new File("product-report.xml");
         Document doc = builder.build(xml);
-
         Element root = doc.getRootElement();
-
         Elements products = root.getChildElements("product");
-        for (int i = 0; i < products.size(); i++) {
+        
+          for (int i = 0; i < products.size(); i++) {
             Element product = products.get(i);
             Element productID = product.getFirstChildElement("productID");
             Element productCode = product.getFirstChildElement("productCode");
@@ -29,6 +28,5 @@ public class xmlReader {
 
     public static void main(String[] args) {
         xmlReader reader1 = new xmlReader();
-
     }
 }
