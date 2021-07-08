@@ -8,18 +8,17 @@ public class TitlePanel extends JFrame {
         super("Tytuł ramki");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLookAndFeel();
-        String iPannel = JOptionPane.showInputDialog(null, "Tytuł ramki","Wpisz tytuł ramki",
-                JOptionPane.PLAIN_MESSAGE);
+        String iPannel = JOptionPane.showInputDialog(null, "Tytuł ramki","Wpisz tytuł ramki", JOptionPane.PLAIN_MESSAGE);
         setVisible(true);
 
     }
     private void setLookAndFeel() {
         try {
-            UIManager.setLookAndFeel(
-                    "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"
-            );
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
             SwingUtilities.updateComponentTreeUI(this);
-        }catch(Exception exc) { }
+        } catch(Exception exc) {
+            
+        }
     }
 
     public static void main(String[] args) {
