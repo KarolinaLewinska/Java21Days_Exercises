@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         MarsRobot robot1 = new MarsRobot();
-        MarsRobot robot2 = new MarsRobot("w drodze",30,-20);
+        MarsRobot robot2 = new MarsRobot("w drodze", 30, -20);
         MarsRobot robot3 = new MarsRobot("w spoczynku");
 
         System.out.println("Pierwszy robot: ");
@@ -20,21 +20,21 @@ public class Main {
     }
 }
 class MarsRobot {
+    String status = "eksploracja";
+    int speed = 12;
+    float temperature = -50;
+    
     public MarsRobot(String status, int speed, float temperature) {
         this.status = status;
         this.speed = speed;
         this.temperature = temperature;
     }
-    public MarsRobot(){
+    public MarsRobot() {
 
     }
     public MarsRobot(String status){
         this.status = status;
     }
-
-    String status = "eksploracja";
-    int speed = 12;
-    float temperature = -50;
 
     void checkTemperature() {
         if (temperature < -80) {
