@@ -25,18 +25,14 @@ public class AdvogatoConn {
         }
     }
 
-    public Integer getEntryCount(String username)
-            throws IOException, XmlRpcException {
-
+    public Integer getEntryCount(String username) throws IOException, XmlRpcException {
         ArrayList<Object> params = new ArrayList<>();
         params.add(username);
         Integer result = (Integer) client.execute("dziennik.len", params);
         return result;
     }
 
-    public String getEntry(String username, Integer index)
-            throws IOException, XmlRpcException {
-
+    public String getEntry(String username, Integer index) throws IOException, XmlRpcException {
         ArrayList<Object> params = new ArrayList<>();
         params.add(username);
         params.add(index);
