@@ -19,12 +19,14 @@ public class FileReaderAndZeroWriter {
                     sizeOfFile++;
                 }
             }
+            
             file.close();
 
             FileOutputStream file2 = new FileOutputStream("file.txt");
             for (int i = 0; i < sizeOfFile; i++) {
                 file2.write((byte) 0);
             }
+            
             file2.close();
         } catch (IOException e) {
             System.out.println("Błąd " + e.getMessage());
