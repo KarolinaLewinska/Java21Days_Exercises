@@ -6,12 +6,14 @@ import java.awt.*;
 public class DataPanel extends JFrame {
     JLabel nameLab = new JLabel("Imię", SwingConstants.LEFT);
     JLabel surnLab = new JLabel("Nazwisko", SwingConstants.LEFT);
+    JLabel emailLab = new JLabel("Adres email", SwingConstants.LEFT);
+    JLabel phoneLab = new JLabel("Telefon", SwingConstants.LEFT);
+    
     JTextField name = new JTextField(30);
     JTextField surname = new JTextField(30);
-    JLabel emailLab = new JLabel("Adres email", SwingConstants.LEFT);
     JTextField email = new JTextField(30);
-    JLabel phoneLab = new JLabel("Telefon", SwingConstants.LEFT);
     JTextField phone = new JTextField(30);
+    
     DataPanel2 panel2 = new DataPanel2();
     DataPanel3 panel3 = new DataPanel3();
     DataPanel4 panel4 = new DataPanel4();
@@ -42,9 +44,7 @@ public class DataPanel extends JFrame {
 
     private static void setLookAndFeel() {
         try {
-            UIManager.setLookAndFeel(
-                    "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"
-            );
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception exc) {
             System.out.println("Błąd " + exc);
         }
@@ -63,7 +63,7 @@ class DataPanel2 extends JPanel {
     DataPanel2() {
         FlowLayout lay2 = new FlowLayout();
         setLayout(lay2);
-        genders[0] = new JRadioButton("kobieta ");
+        genders[0] = new JRadioButton("kobieta");
         genders[1] = new JRadioButton("mężczyzna");
         add(genderLab);
         ButtonGroup group = new ButtonGroup();
@@ -75,7 +75,7 @@ class DataPanel2 extends JPanel {
 }
 
 class DataPanel3 extends JPanel {
-    JLabel aboutMeLab = new JLabel("O mnie  ");
+    JLabel aboutMeLab = new JLabel("O mnie ");
     JTextArea aboutMe = new JTextArea(5, 20);
     JPanel aboutPanel = new JPanel();
     JScrollPane scroll = new JScrollPane(aboutMe, ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS,
