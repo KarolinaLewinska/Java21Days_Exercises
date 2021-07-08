@@ -1,4 +1,4 @@
-# Java21Days_Exercises
+# Java21Days Exercises
 Exercises made to learn Java from "Java in 21 Days" book.
 * Classes, their instances and methods.
 * Overriding, usage of "this" and "super".
