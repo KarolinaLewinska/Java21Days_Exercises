@@ -27,13 +27,12 @@ public class WeblogsConn {
         }
     }
 
-    public HashMap ping(String siteName, String siteUrl)
-            throws IOException, XmlRpcException {
-
+    public HashMap ping(String siteName, String siteUrl) throws IOException, XmlRpcException {
         ArrayList<String> params = new ArrayList<>();
         params.add(siteName);
         params.add(siteUrl);
         Object result = client.execute("weblogUpdates.ping", params);
+        
         if (result instanceof XmlRpcException) {
             throw (XmlRpcException) result;
         }
