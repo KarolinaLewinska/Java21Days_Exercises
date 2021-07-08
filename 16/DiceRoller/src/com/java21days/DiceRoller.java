@@ -28,8 +28,8 @@ public class DiceRoller extends JFrame {
     }
 
     JTextField[] total = new JTextField[16];
-    JButton roll;
     JTextField quantity;
+    JButton roll;
     DiceWorker worker;
 
     public DiceRoller() {
@@ -48,22 +48,18 @@ public class DiceRoller extends JFrame {
             cell.add(total[i]);
             topPane.add(cell);
         }
-
         JPanel bottomPane = new JPanel();
         JLabel quantityLabel = new JLabel("Liczba rzutów: ");
         quantity = new JTextField("0", 5);
         roll = new JButton("Rzuć");
-
         roll.addActionListener(act);
         bottomPane.add(quantityLabel);
         bottomPane.add(quantity);
         bottomPane.add(roll);
-
         GridLayout frameGrid = new GridLayout(2, 1);
         setLayout(frameGrid);
         add(topPane);
         add(bottomPane);
-
         setVisible(true);
     }
 
@@ -91,12 +87,9 @@ public class DiceRoller extends JFrame {
         }
     };
 
-
     private static void setLookAndFeel() {
         try {
-            UIManager.setLookAndFeel(
-                    "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"
-            );
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
         } catch (Exception exc) {
 
         }
