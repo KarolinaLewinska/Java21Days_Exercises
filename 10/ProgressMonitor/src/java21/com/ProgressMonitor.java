@@ -5,8 +5,8 @@ import javax.swing.*;
 
 public class ProgressMonitor extends JFrame {
     JProgressBar current;
-    int num = 0;
     JTextField numField;
+    int num = 0;
 
     public ProgressMonitor() {
         super("Monitorowanie postępu");
@@ -29,6 +29,7 @@ public class ProgressMonitor extends JFrame {
         while (num < 2000) {
             current.setValue(num);
             numField.setText("" + num);
+            
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) { }
@@ -38,13 +39,10 @@ public class ProgressMonitor extends JFrame {
 
     private void setLookAndFeel() {
         try {
-            UIManager.setLookAndFeel(
-                    "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel"
-            );
+            UIManager.setLookAndFeel("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel");
             SwingUtilities.updateComponentTreeUI(this);
         } catch (Exception e) {
-            System.err.println("Nie potrafię wczytać "
-                    + "systemowego wyglądu: " + e);
+            System.err.println("Wystąpił błąd " + e);
         }
     }
 
