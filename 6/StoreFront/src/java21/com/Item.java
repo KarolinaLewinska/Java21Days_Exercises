@@ -1,11 +1,9 @@
 package java21.com;
 
 public class Item implements Comparable {
-    private String id;
-    private String name;
-    private double retail;
+    private String id, name;
+    private double retail, price;
     private int quantity;
-    private double price;
     private boolean noDiscount;
 
     Item(String idIn, String nameIn, String retailIn, String qIn, String discountIn) {
@@ -21,7 +19,8 @@ public class Item implements Comparable {
             price = retail * .6D;
         else
             price = retail * .7D;
-        price = Math.floor( price * 100 + .5 ) / 100;
+        
+        price = Math.floor(price * 100 + .5) / 100;
         if (noDiscount)
             price = retail;
     }
