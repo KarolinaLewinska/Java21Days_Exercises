@@ -4,20 +4,16 @@ import java.io.*;
 import nu.xom.*;
 
 public class BookFinder {
-
     public void readXML() {
         try {
             Builder builder1 = new Builder();
             File xmlFile = new File("books.xml");
             Document doc = builder1.build(xmlFile);
-
             Element root = doc.getRootElement();
-
             Elements books = root.getChildElements("book");
 
             for (int i = 0; i < books.size(); i++) {
                 Element book = books.get(i);
-
                 Element authorName = book.getFirstChildElement("author");
 
                 if (authorName != null) {
