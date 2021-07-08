@@ -1,15 +1,16 @@
 package java21.com;
 
 public class PrimeFinder implements Runnable {
-    public long target;
-    public long prime;
+    public long target, prime;
     public boolean finished = false;
     private Thread runner;
 
     PrimeFinder(long inTarget) throws NegativeNumberException {
-        target = inTarget;
-        if(inTarget < 0) {
-            NegativeNumberException nne = new NegativeNumberException("Liczba nie może być ujemna" + inTarget);
+        this.target = inTarget;
+        
+        if (inTarget < 0) {
+            NegativeNumberException nne = 
+                new NegativeNumberException("Liczba nie może być ujemna" + inTarget);
             throw nne;
         }
         if (runner == null) {
@@ -21,6 +22,7 @@ public class PrimeFinder implements Runnable {
     public void run() {
         long numPrimes = 0;
         long candidate = 2;
+        
         while (numPrimes < target) {
             if (isPrime(candidate)) {
                 numPrimes++;
@@ -40,6 +42,7 @@ public class PrimeFinder implements Runnable {
         return true;
     }
 }
+
 class NegativeNumberException extends Exception {
     NegativeNumberException() {
         super();
