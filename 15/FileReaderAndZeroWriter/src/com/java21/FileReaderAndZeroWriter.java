@@ -30,6 +30,5 @@ public class FileReaderAndZeroWriter {
             System.out.println("Błąd " + e.getMessage());
         }
     }
-
 }
 
